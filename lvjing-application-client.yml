@@ -1,0 +1,43 @@
+spring:
+  prpfiles:
+    active:
+    - dev
+    
+---
+
+server:
+  port: 8201
+spring:
+  profiles: dev
+  application:
+    name: lvjing-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://muEureka-dev.com:7001/eureka/
+      
+---
+
+server:
+  port: 8202
+spring:
+  profiles: test
+  application:
+    name: lvjing-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://muEureka-dev.com:7001/eureka/
+      
+---
+
+server:
+  port: 8203
+spring:
+  profiles: prod
+  application:
+    name: lvjing-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://muEureka-dev.com:7001/eureka/
