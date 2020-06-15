@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active:
+    - dev
+    
+---
+
+spring:
+  profiles: dev  # 开发环境
+  application:
+    name: lvjing-springcloud-config-dev
+
+---
+
+spring:
+  profiles: test  # 测试环境
+  application:
+    name: lvjing-springcloud-config-test
+
+---
+
+spring:
+  profiles: prod  # 生产环境
+  application:
+    name: lvjing-springcloud-config-prod
+   
+# 请保存为UTF-8格式
